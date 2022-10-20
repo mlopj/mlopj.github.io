@@ -1,0 +1,27 @@
+body {
+    margin: 0 auto;
+}
+
+.wrapper {
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    padding-top: .5rem;
+    padding-left: 3rem;
+}
+.btn {
+    background-color: rgb(221, 84, 84);
+    padding: 1em;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+    border-bottom-right-radius: .5em;
+    border-bottom-left-radius: .5em;
+    transition-property: background_color;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: lighter;
+}
+.btn:hover {
+    transition: .2s;
+    background-color: rgb(175, 61, 61);
+}

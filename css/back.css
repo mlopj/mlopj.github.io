@@ -1,0 +1,12 @@
+.back {
+    background-color: rgb(221, 84, 84);
+    padding: 1em;
+    font-size: x-large;
+    text-decoration: none;
+    color: white;
+    border-bottom-right-radius: .5em;
+    border-bottom-left-radius: .5em;
+    transition-property: background_color;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: lighter;
+}

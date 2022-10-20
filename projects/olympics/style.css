@@ -1,0 +1,55 @@
+body {
+    background-image: url(arena.png);
+}
+.title {
+    font-size: 3.9em;
+    font-weight: 100;
+    color: white;
+    font-family: 'Raleway', sans-serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+.row {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.block {
+    font-family: 'Raleway', sans-serif;
+    width: 300px;
+    display: inline-block;
+    border: solid;
+    border-radius: 25px;
+    border-width: 7px;
+    border-color: #d84338;
+    margin-top: 10%;
+    background-color: white;
+}
+
+.block-img {
+    width: 200px;
+    margin-bottom: 25px;
+    margin-top: 0px;
+}
+
+.book-btn {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: x-large;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #d84338;
+    padding: 15px;
+    border-radius: 100px;
+}
+.book-btn:hover {
+    font-size: x-large;
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: white;
+    background-color: #d84338;
+    padding: 15px;
+    border-radius: 100px;
+    transform: scale(1.1);
+}
