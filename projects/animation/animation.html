@@ -1,0 +1,88 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .back {
+        background-color: rgb(221, 84, 84);
+        padding: 1em;
+        font-size: x-large;
+        text-decoration: none;
+        color: white;
+        border-bottom-right-radius: .5em;
+        border-bottom-left-radius: .5em;
+        transition-property: background_color;
+        font-family: 'Segoe UI', sans-serif;
+        font-weight: lighter;
+    }   
+</style>
+<style>
+    
+    body {
+        overflow: hidden;
+    }
+    .wrapper {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        align-items: center;
+        justify-content: center;
+        padding: 1em;
+    }
+    .dot {
+        width: 10em;
+        height: 10em;
+        display: inline-block;
+        background-color: #bbb;
+        border-radius: 50%;
+        margin: 5em;
+    }
+    #bottom {
+        position: absolute;
+        top: 100%;
+        margin: 0 auto;
+        animation: bar 1s infinite;
+    }
+    @keyframes dot {
+        100% { transform: scale(1.5); background-color: rgb(240, 88, 108); opacity: 0}      
+    }
+    .animate {
+        animation: dot .75s forwards;
+    }
+
+</style>
+<script>
+    function a() {
+        document.getElementById('dot').classList.add('animate') 
+    }
+    function b() {
+        document.getElementById('a').classList.add('animate') 
+    }
+    function c() {
+        document.getElementById('b').classList.add('animate') 
+    }
+    function d() {
+        document.getElementById('c').classList.add('animate') 
+    }
+    function e() {
+        document.getElementById('d').classList.add('animate') 
+    }
+    function f() {
+        document.getElementById('e').classList.add('animate') 
+    }
+
+</script>
+<a href="../../projects" class="back">Back to Projects</a>
+<body>
+    <div class="wrapper">
+        <span class="dot" id="dot" onclick="a()"></span>
+        <span class="dot" id="a" onclick="b()"></span>
+        <span class="dot" id="b" onclick="c()"></span>
+        <span class="dot" id="c" onclick="d()"></span>
+        <span class="dot" id="d" onclick="e()"></span>
+        <span class="dot" id="e" onclick="f()"></span>
+    </div>
+</body>
+</html>
