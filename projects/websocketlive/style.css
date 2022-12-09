@@ -57,6 +57,7 @@ body {
     -webkit-user-select: none;
     -ms-user-select: none;
     margin-right: 1em;
+    text-decoration: none;
 }
 .premium-btn:hover {
     background-color: rgb(48, 31, 0);
