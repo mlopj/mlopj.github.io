@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;700&family=Roboto+Mono:wght@300;400;700&display=swap');
+body {
+    background-color: rgb(42, 42, 42);
+    margin: 0;
+}
+.top-bar {
+    background-color: rgb(24, 24, 24);
+    padding: .5em;
+    height: 2.1em;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+}
+
+.logo-txt {
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0 auto;
+    padding: 0 auto;
+    float: left;
+    margin-right: .6em;
+    text-emphasis: non;
+    user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+}
+.logo-svg {
+    color: white;
+    margin-right: 1em;
+    float: left;
+}
+.logo-svg:hover {
+    cursor: pointer;
+    transform: scale(1.075);
+    transition: all .2s;
+}
+.premium-btn {
+    color: rgb(255, 166, 0);
+    font-family: 'Poppins', sans-serif;
+    font-weight: 200;
+    font-size: 120%;
+    padding-left: .6em;
+    padding-right: .6em;
+    border-width: .1em;
+    border-style: solid;
+    border-radius: 5em;
+    margin: 0 auto;
+    padding: 0 auto;
+    float: left;
+    background-color: rgb(24, 24, 24);
+    user-select: none;
+    -moz-user-select: -moz-none;
+    -khtml-user-select: none;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    margin-right: 1em;
+}
+.premium-btn:hover {
+    background-color: rgb(48, 31, 0);
+    color: rgb(255, 185, 55);
+    cursor: pointer;
+    transition: all ease-in-out .1s;
+}
+
+.side-bar {
+    background-color: rgb(24, 24, 24);
+    margin-top: 3em;
+    padding: .5em;
+    width: 2em;
+    height: 100%;
+    position: relative;
+    float: left;
+    position: fixed;
+}
+.sidebar-icns {
+    color: white;
+    margin-bottom: 1.2em;
+    cursor: pointer;
+}
+.icn-grp {
+    position: absolute;
+}
+.wrapper {
+    flex-wrap: nowrap;   
+    float: left;
+    margin: 0;
+    width: 100%;
+}
+.socket {
+    background-color: rgb(24, 24, 24);
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+    margin: .2em;
+    padding: .8em;
+    border-top-left-radius: .5em;
+    border-bottom-left-radius: .5em;
+    width: 100%;
+    margin: 0;
+    margin-top: 1em;
+}
+.active-sockets {
+    position: absolute;
+    float: left;
+    margin: 4em 4em 0;
+    height: 100%;
+    width: 100%;
+}
+
+.active {
+    background-color: rgb(24, 24, 24);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: .5em;
+    border-radius: .25em;
+}
+input {
+    font-family: 'Roboto Mono', monospace;
+    background-color: transparent;
+    border: none;
+    font-size: 1.5em;
+    color: white;
+    width: 50%;
+    float: left;
+}
+input:focus {
+    outline-width: 0;
+}
+#create-btn {
+    font-size: 1.5em;
+    color: aquamarine;
+    background: transparent;
+    border-style: solid;
+    border-width: 1pt;
+    border-color: aquamarine;
+    border-radius: 3em;
+    padding-left: .5em;
+    padding-right: .5em;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+}
+#create-btn:hover {
+    cursor: pointer;
+}
+.animated {
+    animation: create forwards 1s ease-in-out;
+}
+
+@keyframes create {50% {transform: scale(.3); border-color: rgb(235, 42, 58); color: rgb(235, 42, 58);} 100% {border-color: rgb(235, 42, 58); color: rgb(235, 42, 58)}}
