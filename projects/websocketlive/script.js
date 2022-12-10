@@ -1,5 +1,6 @@
 const { time } = require("console")
 let input_element = document.getElementById('socket-name')
+document.getElementById('socket-name').value = "Untitled Web Socket"
 function generate() {
     // variables
     let input = document.getElementById('socket-name').value
@@ -16,13 +17,15 @@ function generate() {
     //makes input uneditable
     input_element.setAttribute("readonly", "");
 
-    document.getElementById('socket-name').value = input+" The Socket ;)"
+    document.getElementById('socket-name').value = input
 
     //animates button
     create_btn.classList = "animated"
     setTimeout(function(){
         create_btn.innerText = "OFFLINE" 
     }, 500);
+    //create_btn.setAttribute("disabled", "");
+    console.log('hi')
 }
 function set() {
     this.style.width = this.value.length + "ch";
